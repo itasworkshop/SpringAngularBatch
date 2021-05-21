@@ -226,7 +226,7 @@ class metricstruct{
 			}
 			
 		}
-		System.out.println(app_idmap.size());
+		//System.out.println(app_idmap.size());
 		return app_id;
 		
 	}
