@@ -10,7 +10,7 @@ public static void main(String args[]){
 
 
       try {
-    	  FileWriter out = new FileWriter("D:/output.txt");
+    	  FileWriter out = new FileWriter("resources\\input.txt");
          
          int c=0;
          	while(c<1000) {
@@ -18,25 +18,16 @@ public static void main(String args[]){
             out.write(",");
             c++;
          	}
-         	out.write((Integer.toString(1000)));
-         	out.write("\n");
-         	c++;
          	while(c<2000) {
                 out.write(Integer.toString(c));
                 out.write(",");
                 c++;
              	}
-         	out.write((Integer.toString(2000)));
-         	out.write("\n");
-         	c++;
          	while(c<3000) {
                 out.write(Integer.toString(c));
                 out.write(",");
                 c++;
              	}
-         	out.write((Integer.toString(3000)));
-         	out.write("\n");
-         	c++;
          out.close();
          
          

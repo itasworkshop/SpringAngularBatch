@@ -15,10 +15,8 @@ public class students implements Comparable<students> {
 	
 	@Override
 	public int compareTo(students o) {
-		String a = "" + this.id;
-		a= a+ this.name;
-		String b = "" + o.id;
-		b = b+o.name;
-		return a.compareTo(b);
+		if(this.id==o.id)
+		return this.name.compareTo(o.name);
+		return this.id-o.id;
 	}
 }
