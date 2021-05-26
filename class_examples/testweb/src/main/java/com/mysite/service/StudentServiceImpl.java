@@ -23,4 +23,13 @@ public class StudentServiceImpl implements StudentService{
 		return studentDao.findAll();
 	}
 
+	@Override
+	public Student findById(Integer id) {
+		return studentDao.findById(id);
+	}
+	
+	public void save(Student student) {
+		studentDao.save(student);
+	}
+
 }
