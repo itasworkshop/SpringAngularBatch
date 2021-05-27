@@ -1,8 +1,8 @@
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/web/StudentController.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/dao/StudentDao.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/dao/StudentDaoImpl.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/config/SpringWebConfig.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/config/SpringDBConfig.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/service/StudentServiceImpl.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/model/Student.java
-/home/prave/Documents/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/service/StudentService.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/dao/StudentDaoImpl.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/dao/StudentDao.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/web/StudentController.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/config/SpringWebConfig.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/service/StudentService.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/service/StudentServiceImpl.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/config/SpringDBConfig.java
+/home/praveen/Development/SpringAngularBatch/class_examples/testweb/src/main/java/com/mysite/model/Student.java
