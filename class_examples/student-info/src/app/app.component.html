@@ -1,3 +1,37 @@
 <span>{{ title }} app is running!</span>
 
 <h1>Hi this is {{name}}</h1>
+
+<!-- <h1>Hi this is {{user.fname}}{{user.lname}}</h1> -->
+
+<h1>Hi this is {{users}}</h1>
+<!-- 
+<div *ngIf="flag1">
+<ul class="student">
+  <li *ngFor = "let user of users">
+    <div *ngIf="user.marks >= 25">
+    <h3>from list</h3>
+    <span class="badge">this user is {{user.fname}}</span>{{user.lname}}
+    <h4>{{user.marks}}</h4>
+  </div>
+  </li>
+</ul>
+</div> -->
+
+
+<h4>The current counter is {{counter}}</h4>
+<button (click)="counting()">Counter</button>
+
+<ul class="student">
+  <li *ngFor = "let user of users" (click)="onSelect(user)">     
+    <span class="badge">this user is {{user.fname}} </span>
+  </li>
+</ul>
+
+<app-student-detail [user]="selectedUser"></app-student-detail>
+
+<!-- <h4>User details are: </h4>
+<h5>{{user.fname}}</h5>
+<h5>{{user.lname}}</h5>
+<h5>{{user.marks}}</h5>
+ -->
