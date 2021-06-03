@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BehaviorSubject, interval, observable, Observable, of, ReplaySubject, Subject } from 'rxjs';
-import {debounceTime, filter, map, mergeMap, switchMap, take} from 'rxjs/operators';
+import {filter, map, mergeMap, switchMap, take} from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -14,18 +14,23 @@ export class AppComponent {
 
   searchString = '';
 
-  searchSubject$ = new Subject<string>();
+  subject$:any;
 
-  ngOnInit(){    
+  ngOnInit(){
+
+    const numbers$ = interval(1000).pipe(take(5));
+    const letters$ = of('a','b','c','d','e');
+
+    letters$.pipe(switchMap(x =>
+       numbers$.pipe(take(5),map(i => i+x))
+      )).subscribe(x => console.log(x));
    
-    this.searchSubject$.pipe(debounceTime(200)).subscribe(x=>
-          console.log('debounce: ',x));
-    }   
-   
+    
+  }
 
   inputChanged($event: any) {
     console.log('input changed', $event);
-    this.searchSubject$.next($event);
+    
   }
 }
 
